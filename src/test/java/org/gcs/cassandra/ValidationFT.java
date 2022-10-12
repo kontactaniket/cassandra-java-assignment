@@ -62,7 +62,8 @@ class ValidationFT {
 
     @Test
     void satellite_sends_scan_results() throws Exception {
-        String postUrl = "http://localhost:8080/scan/addScanResult";
+        String getUrl = "http://localhost:8080/scan/getScanResult?location=25N,71W&date=2025-08-17"; // TODO Change if your endpoint is different
+        String postUrl = "http://localhost:8080/scan/addScanResult"; // TODO Change if your endpoint is different
         //"{"+""key":{"location":"27N,71W","scan_day":"2025-08-17"},"name":"Bermuda Circle","id_bird":"50554d6e-29bb-11e5-b345-feff819cdc9f","bird_species":"Common loon","bird_traits":"red eyes, swim and dive, webbed feet"}
         String json = "" +
                 "{" +
